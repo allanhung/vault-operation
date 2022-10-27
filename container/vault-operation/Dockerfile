@@ -1,7 +1,7 @@
 from quay.io/centos/centos:stream9
 
 RUN dnf install -y python-pip
-COPY src/vault-api /app
+COPY src /app
 WORKDIR /app
 RUN pip install .
 
